@@ -208,3 +208,141 @@ main #otheract .subsectleft figure img, main #otheract .subsectright figure img{
     height: 179px;
     
 }
+
+@media screen and (max-width: 375px){
+
+    /* Main inicio.html */
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section#bienvenido{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main section#mensaje{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section#bienvenido .texto .subtitulo, main section#mensaje .texto .subtitulo{
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    main section#bienvenido .texto .contenido, main section#mensaje .texto .contenido{
+        font-size: 21px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    main section#bienvenido figure img, main section#mensaje figure img{
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    main #mensaje figure img {
+        width: 339px;
+        height: 250px;
+        padding-left: 0;
+    }
+
+    main section#exitos .subtitulo{
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    main section#exitos #libros{
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    main section#exitos #libros figure img{
+        width: 240px;
+        height: 364px;
+    }
+
+    main section#act, main section#otheract{
+        flex-direction: column;
+    }
+
+    main section#act .subsectleft, main section#otheract .subsectright{
+        flex-direction: column-reverse;
+    }
+
+    main section#act .subsectleft .texto, main section#act .subsectright .texto{
+        align-items: center;
+    }
+
+    main section#act .subsectright, main section#otheract .subsectleft{
+        flex-direction: column;
+    }
+
+    main section#act .subsectleft figure, main section#act .subsectright figure, main section#otheract .subsectleft figure, main section#otheract .subsectright figure{
+        margin-bottom: 2rem;
+    }
+
+    main section#otheract{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    main section#otheract .texto, main section#act .texto{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    main section#otheract .subsectleft p{
+        text-align: center;
+    }
+
+    .subsectleft p, .subsectright p{
+        font-size: 21px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .subsectleft h3, .subsectright h3{
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Main registro.html */
+
+    main#error404{
+        height: 125vh;
+    }
+
+    main#error404 #mensajeError h1{
+        font-size: 60px;
+    }
+
+    main#error404 #mensajeError h2{
+        
+    }
+
+    main#error404 #mensajeError a{
+        font-size: 20px;
+    }
+
+    header nav input{
+        width: auto;
+    }
+}
