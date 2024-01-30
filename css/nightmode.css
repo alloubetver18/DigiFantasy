@@ -104,6 +104,10 @@ header #searchNightOff{
     display: none;
 }
 
+header #searchNightOn{
+    display: block;
+}
+
 /* footer */
 
 footer{
