@@ -1,0 +1,895 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary500: #58B9FF;
+    --neutral900: #2A3C43;
+    --secondary2-400: #FFDD2B;
+    --white: #FFFFFF;
+    --inputbg: #D9D9D9;
+}
+
+/* Estilos generales */
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 120px;
+    background-color: var(--primary500);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* Logo */
+/* 100px ancho * 60px alto */
+header figure, header figure img{
+    width: 100px;
+    height: 60px;
+}
+
+/* nav */
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+header nav ul li{
+    margin-right: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+header nav ul li a:hover{
+    color: var(--secondary2-400);
+}
+
+header nav #search{
+    background-color: #eee;
+    border: 0;
+}
+
+header nav #searchform{
+    height: fit-content;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+}
+
+header nav input{
+    width: 41rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    padding-left: .3rem;
+    border-radius: .3rem;
+}
+
+header nav a, header nav a img{
+    width: 26px;
+    height: 26px;
+    margin:auto
+}
+
+header #nightOff{
+    display: flex;
+    align-items: flex-end;
+}
+
+header #nightOff img{
+    width: 26px;
+    height: 26px;
+    margin:auto;
+}
+
+header #nightOn{
+    display: none;
+}
+
+header #searchNightOn{
+    display: none;
+}
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: var(--neutral900);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+footer #redes #links{
+    display: flex;
+}
+
+footer #redes #links p{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+footer #internalLinks p a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Estilos específicos */
+
+main{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+}
+
+/* Sección Bienvenido */
+
+main #bienvenido, main #mensaje{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+main #bienvenido .texto{
+    padding: 2rem;
+}
+
+main #bienvenido .texto h1{
+    font-size: 31px;
+    font-weight: normal;
+}
+
+main #bienvenido .texto .contenido{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+main #bienvenido figure{
+    padding-top: 1rem;
+}
+
+main #bienvenido figure img{
+    width: 372px;
+    height: 116px;
+}
+
+main #bienvenido figure img#nightlogo{
+    display: none;
+}
+
+
+/* Sección Mensaje */
+
+main #mensaje figure img{
+    width: 450px;
+    height: 250px;
+    padding-left: 2rem;
+}
+
+main #mensaje .texto{
+    text-align: right;
+    padding: 1.5rem;
+    padding-right: 2.5rem;
+}
+
+main #mensaje .texto h1{
+    font-size: 31px;
+    font-weight: normal;
+}
+
+main #mensaje .texto .contenido{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Sección Éxitos */
+
+main #exitos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+main #exitos #libros{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+main #exitos #libros figure img{
+    width: 120px;
+    height: 150px;
+}
+
+/* Seccion actividades 1 */
+
+main #act{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right:2rem;
+    margin-top: 3rem;
+}
+
+main #act section{
+    display: flex;
+    align-items: center;
+}
+
+main #act .subsectleft .texto, main #act .subsectright .texto{
+    width: 23.5rem;
+}
+
+main #act .subsectleft .texto h3, main #act .subsectright .texto h3{
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+main #act .subsectleft .texto p, main #act .subsectleft .texto a, main #act .subsectright .texto p, main #act .subsectright .texto a{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+main #act .subsectleft .texto a, main #act .subsectright .texto a{
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--secondary2-400);
+    text-align: center;
+}
+
+main #act .subsectleft .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main #act .subsectright .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main #act .subsectright .texto a{
+    margin-top: 1rem;
+    text-align: left;
+    
+}
+
+main #act .subsectright .texto{
+    text-align: right;
+}
+
+main #act .subsectleft figure, main #act .subsectright figure{
+    width: 230px;
+    height: 179px;
+    /* 230 x 179 */
+}
+
+main #act .subsectleft figure img, main #act .subsectright figure img{
+    width: 230px;
+    height: 179px;
+    
+}
+
+/* Seccion actividades 2 */
+
+main #otheract{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right:2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+main #otheract section{
+    display: flex;
+    align-items: center;
+}
+
+main #otheract .subsectleft .texto, main #otheract .subsectright .texto{
+    display: block;
+    width: 23.5rem;
+}
+
+main #otheract .subsectleft .texto h3, main #otheract .subsectright .texto h3{
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+main #otheract .subsectleft .texto p, main #otheract .subsectright .texto p{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+main #otheract .subsectleft .texto{
+    text-align: right;
+}
+
+main #otheract .subsectleft figure, main #otheract .subsectright figure{
+    width: 230px;
+    height: 179px;
+    /* 230 x 179 */
+}
+
+main #otheract .subsectleft figure img, main #otheract .subsectright figure img{
+    width: 230px;
+    height: 179px;
+    
+}
+
+/* Main Registro Paso 1 */
+
+/* Seccion cabecera */
+main#registro1{
+    width: 60%;
+    height: 75vh;
+}
+
+main#registro1 #formulario #cabecera{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+main#registro1 #formulario #cabecera h2{
+    padding-bottom: 1rem;
+}
+
+main#registro1 #formulario #cabecera h3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+}
+
+main#registro1 #formulario #cabecera span{
+    padding-left: 1rem;
+    line-height: 2.2rem;
+    font-weight: normal;
+}
+main#registro1 #formulario #cabecera span.pasoActual{
+    padding-right: 1rem;
+    text-decoration: underline;
+    padding-left: 0;
+}
+
+/* Seccion formulario */
+
+main#registro1 #formulario #campos, main#registro1 #formulario #condiciones{
+    display: flex;
+    flex-direction: column;
+}
+
+main#registro1 #formulario #campos .campo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+main#registro1 #formulario #campos .campo label{
+    width: 15rem;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+main#registro1 #formulario #campos .campo input{
+    width: 20rem;
+    margin-left: 2rem;
+    border: 0;
+    background-color: var(--inputbg);
+    padding-left: .3rem;
+    border-radius: .3rem;
+}
+
+main#registro1 #formulario #condiciones .campo{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom:.5rem;
+}
+
+main#registro1 #formulario #condiciones{
+    width: 52%;
+    margin: auto;
+}
+
+
+main#registro1 #formulario #condiciones .campo label{
+    padding-left: 1rem;
+}
+
+main#registro1 #formulario #enlaces{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main#registro1 #formulario #enlaces a{
+    text-decoration: none;
+    display: block;
+    width: 10rem;
+    margin:auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--secondary2-400);
+    text-align: center;
+    color: var(--neutral900);
+}
+
+/* Página Historias.html */
+
+/* cabecera nuestras historias */
+
+main#listadoHistorias h3.tituloSec{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    font-size: 31px;
+    font-weight: normal;
+}
+
+main#listadoHistorias {
+    margin-bottom: 3rem;
+}
+
+/* Secciones por género */
+
+.listadoPorGenero .genero{
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.listadoPorGenero .cards-libros{
+    display: flex;
+    justify-content: space-around;
+}
+
+.listadoPorGenero .cards-libros .card-libro .portada, .listadoPorGenero .cards-libros .card-libro .portada img{
+    width: 120px;
+    height: 150px;
+}
+
+.listadoPorGenero .cards-libros .card-libro .tituloLibro{
+    display: block;
+    width: 120px;
+}
+
+/* datosHistoria.html */
+
+#datosHistoria .tituloSec{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 39px;
+    font-weight:600;
+}
+
+#datosHistoria #datosBasicosHistoria{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+#datosHistoria #datosBasicosHistoria #imagenHistoria figure, #datosHistoria #datosBasicosHistoria #imagenHistoria figure img{
+    width: 358px;
+    height: 406px;
+}
+
+#datosHistoria #datosBasicosHistoria #infoHistoria, #datosHistoria #datosBasicosHistoria #infoHistoria ul{
+    font-size: 31px;
+    font-weight:600;
+    list-style: none;
+}
+
+#datosHistoria #datosBasicosHistoria #infoHistoria{
+    margin-left: -8rem;
+}
+
+#datosHistoria #datosBasicosHistoria #infoHistoria ul li span{
+    font-weight:normal;
+}
+
+#datosHistoria #datosBasicosHistoria #infoHistoria a{
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: var(--secondary2-400);
+    text-decoration: none;
+    color: var(--neutral900);
+    padding: 1rem;
+}
+
+#datosHistoria #datosBasicosHistoria #ratingHistoria{
+    font-size: 31px;
+    font-weight:600;
+}
+
+#datosHistoria #datosBasicosHistoria #ratingHistoria .datosValoracion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#datosHistoria #datosBasicosHistoria #ratingHistoria .datosValoracion figure, #datosHistoria #datosBasicosHistoria #ratingHistoria .datosValoracion figure img{
+    width: 36px;
+    height: 36px;
+}
+
+#datosHistoria #sinopsis{
+    width: 80%;
+    font-size: 31px;
+    font-weight:normal;
+    margin: auto;
+    text-align: justify;
+}
+
+#datosHistoria #sinopsis .tituloSeccion, #datosHistoria #sinopsis p{
+    margin-bottom: 1.5rem;
+}
+
+#datosHistoria #obrasRecomendadas, #datosHistoria #valoraciones{
+    width: 80%;
+    margin: auto;
+}
+
+#datosHistoria #obrasRecomendadas .listadoPorGenero .genero{
+    font-size: 31px;
+    font-weight:600;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+#datosHistoria #obrasRecomendadas .listadoPorGenero{
+    margin-bottom: 1.5rem;
+}
+
+#datosHistoria #obrasRecomendadas .cards-libros{
+    text-align: center;
+}
+
+#datosHistoria #valoraciones{
+
+}
+
+#datosHistoria #valoraciones h3{
+    font-size: 31px;
+    font-weight:600;
+    margin-bottom: 1.3rem;
+}
+
+#datosHistoria #valoraciones h3 #cantidadValoraciones{
+    font-weight:normal;
+    
+}
+
+#datosHistoria #valoraciones .valoracion{
+    margin-bottom: 1.5rem;
+}
+
+#datosHistoria #valoraciones .autorFecha span{
+    font-weight:600;
+}
+
+
+#datosHistoria #valoraciones .enlaceValorar{
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin:auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--secondary2-400);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 31px;
+    font-weight:normal;
+    color: var(--neutral900);
+}
+
+/* Página contactar.html */
+
+main#contactar #formulario #cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+main#contactar #formulario #cabecera h2{
+    margin-bottom: 2rem;
+}
+
+main#contactar #formulario #campos, main#contactar #formulario #condiciones{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+main#contactar #formulario #campos input, main#contactar #formulario #campos textarea{
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    resize: none;
+}
+
+main#contactar #formulario #enlaces{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+main#contactar #formulario #enlaces a{
+    width: fit-content;
+    display: block;
+    background-color: var(--secondary2-400);
+    text-decoration: none;
+    color: var(--neutral900);
+    font-size: 25px;
+    font-weight:normal;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+main#contactar #infoContacto h3{
+    text-align: center;
+}
+
+main#contactar #infoContacto #datosContacto{
+    display: flex;
+    justify-content: space-around;
+    margin-top:2rem;
+    margin-bottom:3rem;
+}
+
+main#contactar #infoContacto #datosContacto h3{
+    margin-bottom:2rem;
+}
+
+main#error404{
+    display: flex;
+
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/error404.jpg);
+}
+
+main#error404 #mensajeError{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    margin-top: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0 , 0.5);
+    border-radius: 1rem;
+    color: var(--white);
+}
+
+main#error404 #mensajeError h1{
+    font-size: 80px;
+}
+
+main#error404 #mensajeError h2{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+main#error404 #mensajeError a{
+    width: fit-content;
+    display: block;
+    margin:auto;
+    background-color: var(--secondary2-400);
+    text-decoration: none;
+    color: var(--neutral900);
+    font-size: 25px;
+    font-weight:normal;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+
+/* Sinopsis
+
+31px etiqueta
+
+25px contenido*/
+
+@media screen and (max-width: 375px){
+
+    /* Medias mara max-width 375px */
+    /* Body */
+    body{
+        width: fit-content;
+    }
+
+    /* Header */
+    header{
+        width: 100%;
+        height: 325px;
+        display: block;
+    }
+    header figure img{
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    header nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li{
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--white);
+        margin: 0;
+    }
+    header nav #searchform{
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    header nav input{
+        width: auto;
+    }
+
+    /* Main inicio.html */
+
+    figure img{
+        width: 100vw;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section#bienvenido{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main section#mensaje{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section#bienvenido .texto .subtitulo, main section#mensaje .texto .subtitulo{
+        font-size: 39px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    main section#bienvenido .texto .contenido, main section#mensaje .texto .contenido{
+        font-size: 30px;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    main section#bienvenido figure img, main section#mensaje figure img{
+        width: 720px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main section#exitos .subtitulo{
+        font-size: 39px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    main section#exitos #libros{
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    main section#exitos #libros figure img{
+        width: 240px;
+        height: 364px;
+    }
+
+    main section#act .subsectleft, main section#otheract .subsectright{
+        flex-direction: column-reverse;
+    }
+
+    main section#act .subsectleft .texto, main section#act .subsectright .texto{
+        align-items: center;
+    }
+
+    main section#act .subsectright, main section#otheract .subsectleft{
+        flex-direction: column;
+    }
+
+    main section#act .subsectleft figure, main section#act .subsectright figure, main section#otheract .subsectleft figure, main section#otheract .subsectright figure{
+        margin-bottom: 2rem;
+    }
+
+    main section#otheract{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    main section#otheract .subsectleft p{
+        text-align: center;
+    }
+
+    .subsectleft p, .subsectright p{
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .subsectleft h3, .subsectright h3{
+        font-size: 39px;
+        font-weight: 400;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Main registro.html */
+
+    main#error404{
+        height: 125vh;
+    }
+
+    main#error404 #mensajeError h1{
+        font-size: 60px;
+    }
+
+    main#error404 #mensajeError h2{
+        
+    }
+
+    main#error404 #mensajeError a{
+        font-size: 20px;
+    }
+
+    header nav input{
+        width: auto;
+    }
+}

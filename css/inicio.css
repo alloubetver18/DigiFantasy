@@ -1,0 +1,210 @@
+:root{
+    --primary500: #58B9FF;
+    --neutral900: #2A3C43;
+    --secondary2-400: #FFDD2B;
+    --white: #FFFFFF;
+    --inputbg: #D9D9D9;
+}
+
+main #bienvenido, main #mensaje{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+main #bienvenido .texto{
+    padding: 2rem;
+}
+
+main #bienvenido .texto h1{
+    font-size: 31px;
+    font-weight: normal;
+}
+
+main #bienvenido .texto .contenido{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+main #bienvenido figure{
+    padding-top: 1rem;
+}
+
+main #bienvenido figure img{
+    width: 372px;
+    height: 116px;
+}
+
+main #bienvenido figure img#nightlogo{
+    display: none;
+}
+
+
+/* Sección Mensaje */
+
+main #mensaje figure img{
+    width: 450px;
+    height: 250px;
+    padding-left: 2rem;
+}
+
+main #mensaje .texto{
+    text-align: right;
+    padding: 1.5rem;
+    padding-right: 2.5rem;
+}
+
+main #mensaje .texto h1{
+    font-size: 31px;
+    font-weight: normal;
+}
+
+main #mensaje .texto .contenido{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Sección Éxitos */
+
+main #exitos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+main #exitos #libros{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+main #exitos #libros figure img{
+    width: 120px;
+    height: 150px;
+}
+
+/* Seccion actividades 1 */
+
+main #act{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right:2rem;
+    margin-top: 3rem;
+}
+
+main #act section{
+    display: flex;
+    align-items: center;
+}
+
+main #act .subsectleft .texto, main #act .subsectright .texto{
+    width: 23.5rem;
+}
+
+main #act .subsectleft .texto h3, main #act .subsectright .texto h3{
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+main #act .subsectleft .texto p, main #act .subsectleft .texto a, main #act .subsectright .texto p, main #act .subsectright .texto a{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+main #act .subsectleft .texto a, main #act .subsectright .texto a{
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    color:var(--neutral900);
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--secondary2-400);
+    text-align: center;
+}
+
+main #act .subsectleft .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main #act .subsectright .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main #act .subsectright .texto a{
+    margin-top: 1rem;
+    text-align: left;
+    
+}
+
+main #act .subsectright .texto{
+    text-align: right;
+}
+
+main #act .subsectleft figure, main #act .subsectright figure{
+    width: 230px;
+    height: 179px;
+    /* 230 x 179 */
+}
+
+main #act .subsectleft figure img, main #act .subsectright figure img{
+    width: 230px;
+    height: 179px;
+    
+}
+
+/* Seccion actividades 2 */
+
+main #otheract{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right:2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+main #otheract section{
+    display: flex;
+    align-items: center;
+}
+
+main #otheract .subsectleft .texto, main #otheract .subsectright .texto{
+    display: block;
+    width: 23.5rem;
+}
+
+main #otheract .subsectleft .texto h3, main #otheract .subsectright .texto h3{
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+main #otheract .subsectleft .texto p, main #otheract .subsectright .texto p{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+main #otheract .subsectleft .texto{
+    text-align: right;
+}
+
+main #otheract .subsectleft figure, main #otheract .subsectright figure{
+    width: 230px;
+    height: 179px;
+    /* 230 x 179 */
+}
+
+main #otheract .subsectleft figure img, main #otheract .subsectright figure img{
+    width: 230px;
+    height: 179px;
+    
+}

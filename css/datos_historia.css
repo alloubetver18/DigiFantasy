@@ -1,0 +1,137 @@
+:root{
+    --primary500: #58B9FF;
+    --neutral900: #2A3C43;
+    --secondary2-400: #FFDD2B;
+    --white: #FFFFFF;
+    --inputbg: #D9D9D9;
+}
+
+/* datosHistoria.html */
+
+#datosHistoria .tituloSec{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 39px;
+    font-weight:600;
+}
+
+#datosHistoria #datosBasicosHistoria{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+#datosHistoria #datosBasicosHistoria #imagenHistoria figure, #datosHistoria #datosBasicosHistoria #imagenHistoria figure img{
+    width: 358px;
+    height: 406px;
+}
+
+#datosHistoria #datosBasicosHistoria #infoHistoria, #datosHistoria #datosBasicosHistoria #infoHistoria ul{
+    font-size: 31px;
+    font-weight:600;
+    list-style: none;
+}
+
+#datosHistoria #datosBasicosHistoria #infoHistoria{
+    margin-left: -8rem;
+}
+
+#datosHistoria #datosBasicosHistoria #infoHistoria ul li span{
+    font-weight:normal;
+}
+
+#datosHistoria #datosBasicosHistoria #infoHistoria a{
+    width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: var(--secondary2-400);
+    text-decoration: none;
+    color: var(--neutral900);
+    padding: 1rem;
+}
+
+#datosHistoria #datosBasicosHistoria #ratingHistoria{
+    font-size: 31px;
+    font-weight:600;
+}
+
+#datosHistoria #datosBasicosHistoria #ratingHistoria .datosValoracion{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#datosHistoria #datosBasicosHistoria #ratingHistoria .datosValoracion figure, #datosHistoria #datosBasicosHistoria #ratingHistoria .datosValoracion figure img{
+    width: 36px;
+    height: 36px;
+}
+
+#datosHistoria #sinopsis{
+    width: 80%;
+    font-size: 31px;
+    font-weight:normal;
+    margin: auto;
+    text-align: justify;
+}
+
+#datosHistoria #sinopsis .tituloSeccion, #datosHistoria #sinopsis p{
+    margin-bottom: 1.5rem;
+}
+
+#datosHistoria #obrasRecomendadas, #datosHistoria #valoraciones{
+    width: 80%;
+    margin: auto;
+}
+
+#datosHistoria #obrasRecomendadas .listadoPorGenero .genero{
+    font-size: 31px;
+    font-weight:600;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+#datosHistoria #obrasRecomendadas .listadoPorGenero{
+    margin-bottom: 1.5rem;
+}
+
+#datosHistoria #obrasRecomendadas .cards-libros{
+    text-align: center;
+}
+
+#datosHistoria #valoraciones h3{
+    font-size: 31px;
+    font-weight:600;
+    margin-bottom: 1.3rem;
+}
+
+#datosHistoria #valoraciones h3 #cantidadValoraciones{
+    font-weight:normal;
+    
+}
+
+#datosHistoria #valoraciones .valoracion{
+    margin-bottom: 1.5rem;
+}
+
+#datosHistoria #valoraciones .autorFecha span{
+    font-weight:600;
+}
+
+
+#datosHistoria #valoraciones .enlaceValorar{
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin:auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--secondary2-400);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 31px;
+    font-weight:normal;
+    color: var(--neutral900);
+}

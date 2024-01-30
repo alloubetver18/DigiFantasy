@@ -1,0 +1,104 @@
+/* Main Registro Paso 1 */
+
+:root{
+    --primary500: #58B9FF;
+    --neutral900: #2A3C43;
+    --secondary2-400: #FFDD2B;
+    --white: #FFFFFF;
+    --inputbg: #D9D9D9;
+}
+
+/* Seccion cabecera */
+main#registro1{
+    width: 60%;
+    height: 75vh;
+}
+
+main#registro1 #formulario #cabecera{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+main#registro1 #formulario #cabecera h2{
+    padding-bottom: 1rem;
+}
+
+main#registro1 #formulario #cabecera h3{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+}
+
+main#registro1 #formulario #cabecera span{
+    padding-left: 1rem;
+    line-height: 2.2rem;
+    font-weight: normal;
+}
+main#registro1 #formulario #cabecera span.pasoActual{
+    padding-right: 1rem;
+    text-decoration: underline;
+    padding-left: 0;
+}
+
+/* Seccion formulario */
+
+main#registro1 #formulario #campos, main#registro1 #formulario #condiciones{
+    display: flex;
+    flex-direction: column;
+}
+
+main#registro1 #formulario #campos .campo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+
+main#registro1 #formulario #campos .campo label{
+    width: 15rem;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+main#registro1 #formulario #campos .campo input{
+    width: 20rem;
+    margin-left: 2rem;
+    border: 0;
+    background-color: var(--inputbg);
+    padding-left: .3rem;
+    border-radius: .3rem;
+}
+
+main#registro1 #formulario #condiciones .campo{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom:.5rem;
+}
+
+main#registro1 #formulario #condiciones{
+    width: 52%;
+    margin: auto;
+}
+
+
+main#registro1 #formulario #condiciones .campo label{
+    padding-left: 1rem;
+}
+
+main#registro1 #formulario #enlaces{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main#registro1 #formulario #enlaces a{
+    text-decoration: none;
+    display: block;
+    width: 10rem;
+    margin:auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--secondary2-400);
+    text-align: center;
+    color: var(--neutral900);
+}

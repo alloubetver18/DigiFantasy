@@ -1,0 +1,180 @@
+<!-- Debes maquetar las páginas de tu sitio web que has elaborado en Figma para:
+Página de inicio
+Registro de usuario
+Listado de productos
+Detalle de producto
+Contacto
+Además, añadiremos una nueva página:
+Error 404 -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos a DigiFantasy: Fantasias Digitales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css">
+    <link id="estilos" rel="stylesheet" href="css/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <figure>
+        <a href="inicio.html"
+          ><img src="img/DF.svg" alt="logoDigiFantasy" srcset=""
+        /></a>
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="historias.html">HISTORIAS</a></li>
+          <li><a href="error404.html">CURSOS</a></li>
+          <li><a href="error404.html">ARTÍCULOS</a></li>
+          <li><a href="error404.html">SOBRE NOSOTROS</a></li>
+        </ul>
+        <div id="searchform">
+          <input type="text" name="search" id="search" />
+          <a href="#">
+            <img src="img/Iconssearch.svg" alt="buscar" srcset="" />
+          </a>
+        </div>
+      </nav>
+      <nav>
+        <ul>
+          <li id="nightOff"><img src="img/IconsNightMode.svg" alt="Modo Nocturno" srcset=""></li>
+          <li><a href="error404.html">LOGIN</a></li>
+          <li><a href="registrar.html">REGISTRO</a></li>
+        </ul>
+      </nav>
+      <nav style="display: none">
+        <ul>
+          <li>Bienvenido <span id="usuario"></span></li>
+          <li>LOGOUT</li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contactar">
+      <section id="formulario">
+        <div id="cabecera">
+          <h2>¿Necesitas ayuda?</h2>
+          <h3>Contacta con nosotros y te responderemos lo antes posible</h3>
+        </div>
+        <div id="campos">
+          <h3>Motivo de la consulta</h3>
+          <div class="campo">
+            <!-- Select -->
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Tema de la consulta"
+            />
+          </div>
+          <div class="campo">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Otros (Describa)"
+              disabled="true"
+            />
+          </div>
+          <div class="campo">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Introduzca su nombre"
+            />
+          </div>
+          <div class="campo">
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Introduzca un email de contacto"
+            />
+          </div>
+          <div class="campo">
+            <textarea
+              name=""
+              id=""
+              cols="50"
+              rows="7"
+              placeholder="Introduzca su consulta."
+            ></textarea>
+          </div>
+        </div>
+        <div id="condiciones">
+          <div class="campo">
+            <input type="checkbox" name="" id="" />
+            <label for="">No soy un Robot </label>
+          </div>
+          <div class="campo">
+            <input type="checkbox" name="" id="" />
+            <label for="">Acepto la Política de Privacidad </label>
+          </div>
+          <div class="campo">
+            <input type="checkbox" name="" id="" />
+            <label for=""
+              >Accedo a que se utilice mi dirección de email como medio de
+              contacto.
+            </label>
+          </div>
+        </div>
+        <div id="enlaces">
+          <a href="error404.html">Enviar</a>
+        </div>
+      </section>
+      <section id="infoContacto">
+        <h3>También puedes contactar con nosotros a través de:</h3>
+        <div id="datosContacto">
+          <div id="atencionCliente">
+            <h3>Teléfono de atención al cliente</h3>
+            <h3>XXX-XX-XX-XX</h3>
+          </div>
+          <div id="atencionEditorial">
+            <h3>Teléfono de atención editorial</h3>
+            <h3>XXX-XX-XX-XX</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="copyright">
+        <p id="copy">Realizado por Alban Loubet Vergara</p>
+      </div>
+      <div id="internalLinks">
+        <p id="privacidad">
+          <a href="error404.html">Política de privacidad</a>
+        </p>
+        <p id="faq"><a href="error404.html">FAQ</a></p>
+        <p id="contacto"><a href="contacto.html">Contacto</a></p>
+      </div>
+      <div id="redes">
+        <p>Redes Sociales</p>
+        <div id="links">
+          <p id="facebook">
+            <a href="error404.html"
+              ><img src="img/Iconsfacebook.svg" alt=""
+            /></a>
+          </p>
+          <p id="instagram">
+            <a href="error404.html"
+              ><img src="img/Iconsinstagram.svg" alt="" srcset=""
+            /></a>
+          </p>
+          <p id="twitter">
+            <a href="error404.html"
+              ><img src="img/Iconstwitter.svg" alt="" srcset=""
+            /></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,283 @@
+<!-- Debes maquetar las páginas de tu sitio web que has elaborado en Figma para:
+Página de inicio
+Registro de usuario
+Listado de productos
+Detalle de producto
+Contacto
+Además, añadiremos una nueva página:
+Error 404 -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos a DigiFantasy: Fantasias Digitales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/global.css">
+    <link id="estilos" rel="stylesheet" href="css/historias.css" />
+  </head>
+  <body>
+    <header>
+      <figure>
+        <a href="inicio.html"
+          ><img src="img/DF.svg" alt="logoDigiFantasy" srcset=""
+        /></a>
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="historias.html">HISTORIAS</a></li>
+          <li><a href="error404.html">CURSOS</a></li>
+          <li><a href="error404.html">ARTÍCULOS</a></li>
+          <li><a href="error404.html">SOBRE NOSOTROS</a></li>
+        </ul>
+        <div id="searchform">
+          <input type="text" name="search" id="search" />
+          <a href="#">
+            <img src="img/Iconssearch.svg" alt="buscar" srcset="" />
+          </a>
+        </div>
+      </nav>
+      <nav>
+        <ul>
+          <li id="nightOff"><img src="img/IconsNightMode.svg" alt="Modo Nocturno" srcset=""></li>
+          <li><a href="error404.html">LOGIN</a></li>
+          <li><a href="registrar.html">REGISTRO</a></li>
+        </ul>
+      </nav>
+      <nav style="display: none">
+        <ul>
+          <li>Bienvenido <span id="usuario"></span></li>
+          <li>LOGOUT</li>
+        </ul>
+      </nav>
+    </header>
+    <main id="listadoHistorias">
+      <h3 class="tituloSec">Nuestras Historias</h3>
+      <section class="listadoPorGenero">
+        <h3 class="genero">Fantasia</h3>
+        <section class="cards-libros">
+          <div class="card-libro">
+            <figure class="portada">
+              <a href="datos_historia.html"><img src="img/portadaLorem.svg" alt="" /></a>
+            </figure>
+            <p class="tituloLibro">El Lorem</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portada2.svg" alt="" />
+            </figure>
+            <p class="tituloLibro">El asesino de Cuervos</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/dragones.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">Dragones bajo la luna</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portada3.svg" alt="" />
+            </figure>
+            <p class="tituloLibro">El Lorem 2</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portada5.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">Las crónicas de Talem</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portada6.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">La Orden</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+        </section>
+      </section>
+      <section class="listadoPorGenero">
+        <h3 class="genero">Romance</h3>
+        <section class="cards-libros">
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/romantic1.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">El romance del ballenero</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/romantic2.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">Luna de pasión</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/romantic4.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">Mar brava</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/romantic5.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">Ámame hasta sangrar</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/romantic6.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">La luna y la rosa</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/romantic7.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">Qué más da lo que digan</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+        </section>
+      </section>
+      <section class="listadoPorGenero">
+        <h3 class="genero">Suspense</h3>
+        <section class="cards-libros">
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portadamisterio1.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">La Sombra del Pasado</p>
+            <p class="autorLibro">Bram Adams</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portadamisterio2.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">El misterio del Tiempo</p>
+            <p class="autorLibro">Alexei Randall</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portadamisterio3.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">La huida del asesino</p>
+            <p class="autorLibro">Bram Adams</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portadamisterio4.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">El asesino de criminales</p>
+            <p class="autorLibro">John Doe</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portadamisterio5.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">El asesino llama dos veces</p>
+            <p class="autorLibro">William Coleman</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portadamisterio6.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">El primer asesinato</p>
+            <p class="autorLibro">Karl Jones</p>
+          </div>
+        </section>
+      </section>
+      <section class="listadoPorGenero">
+        <h3 class="genero">Mejor valorados</h3>
+        <section class="cards-libros">
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portadaLorem.svg" alt="" />
+            </figure>
+            <p class="tituloLibro">El Lorem</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portada2.svg" alt="" />
+            </figure>
+            <p class="tituloLibro">El asesino de Cuervos</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portada5.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">Las crónicas de Talem</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/portada3.svg" alt="" />
+            </figure>
+            <p class="tituloLibro">El Lorem 2</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/romantic5.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">Ámame hasta sangrar</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+          <div class="card-libro">
+            <figure class="portada">
+              <img src="img/romantic1.jpg" alt="" />
+            </figure>
+            <p class="tituloLibro">El romance del ballenero</p>
+            <p class="autorLibro">AlbanLV</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div id="copyright">
+        <p id="copy">Realizado por Alban Loubet Vergara</p>
+      </div>
+      <div id="internalLinks">
+        <p id="privacidad"><a href="error404.html">Política de privacidad</a></p>
+        <p id="faq"><a href="error404.html">FAQ</a></p>
+        <p id="contacto"><a href="contacto.html">Contacto</a></p>
+      </div>
+      <div id="redes">
+        <p>Redes Sociales</p>
+        <div id="links">
+          <p id="facebook">
+            <a href="error404.html"
+              ><img src="img/Iconsfacebook.svg" alt=""
+            /></a>
+          </p>
+          <p id="instagram">
+            <a href="error404.html"
+              ><img src="img/Iconsinstagram.svg" alt="" srcset=""
+            /></a>
+          </p>
+          <p id="twitter">
+            <a href="error404.html"
+              ><img src="img/Iconstwitter.svg" alt="" srcset=""
+            /></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

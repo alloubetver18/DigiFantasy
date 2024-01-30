@@ -1,0 +1,104 @@
+<!-- Debes maquetar las páginas de tu sitio web que has elaborado en Figma para:
+Página de inicio
+Registro de usuario
+Listado de productos
+Detalle de producto
+Contacto
+Además, añadiremos una nueva página:
+Error 404 -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos a DigiFantasy: Fantasias Digitales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/global.css">
+    <link id="estilos" rel="stylesheet" href="css/error404.css" />
+  </head>
+  <body>
+    <header>
+      <figure>
+        <a href="inicio.html"
+          ><img src="img/DF.svg" alt="logoDigiFantasy" srcset=""
+        /></a>
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="historias.html">HISTORIAS</a></li>
+          <li><a href="error404.html">CURSOS</a></li>
+          <li><a href="error404.html">ARTÍCULOS</a></li>
+          <li><a href="error404.html">SOBRE NOSOTROS</a></li>
+        </ul>
+        <div id="searchform">
+          <input type="text" name="search" id="search" />
+          <a href="#">
+            <img src="img/Iconssearch.svg" alt="buscar" srcset="" />
+          </a>
+        </div>
+      </nav>
+      <nav>
+        <ul>
+          <li id="nightOff"><img src="img/IconsNightMode.svg" alt="Modo Nocturno" srcset=""></li>
+          <li><a href="error404.html">LOGIN</a></li>
+          <li><a href="registrar.html">REGISTRO</a></li>
+        </ul>
+      </nav>
+      <nav style="display: none">
+        <ul>
+          <li>Bienvenido <span id="usuario"></span></li>
+          <li>LOGOUT</li>
+        </ul>
+      </nav>
+    </header>
+    <main id="error404">
+      <section id="mensajeError">
+        <h1>Error 404</h1>
+        <h2>
+          Parece que se ha perdido en algún lugar, puede que en los Registros
+          Akáshicos... o que se le haya caido una estantería encima
+        </h2>
+        <a href="inicio.html">Volver a Inicio</a>
+      </section>
+    </main>
+
+    <footer>
+      <div id="copyright">
+        <p id="copy">Realizado por Alban Loubet Vergara</p>
+      </div>
+      <div id="internalLinks">
+        <p id="privacidad">
+          <a href="error404.html">Política de privacidad</a>
+        </p>
+        <p id="faq"><a href="error404.html">FAQ</a></p>
+        <p id="contacto"><a href="contacto.html">Contacto</a></p>
+      </div>
+      <div id="redes">
+        <p>Redes Sociales</p>
+        <div id="links">
+          <p id="facebook">
+            <a href="error404.html"
+              ><img src="img/Iconsfacebook.svg" alt=""
+            /></a>
+          </p>
+          <p id="instagram">
+            <a href="error404.html"
+              ><img src="img/Iconsinstagram.svg" alt="" srcset=""
+            /></a>
+          </p>
+          <p id="twitter">
+            <a href="error404.html"
+              ><img src="img/Iconstwitter.svg" alt="" srcset=""
+            /></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

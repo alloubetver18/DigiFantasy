@@ -1,0 +1,198 @@
+<!-- Debes maquetar las páginas de tu sitio web que has elaborado en Figma para:
+Página de inicio
+Registro de usuario
+Listado de productos
+Detalle de producto
+Contacto
+Además, añadiremos una nueva página:
+Error 404 -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienvenidos a DigiFantasy: Fantasias Digitales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/global.css">
+    <link id="estilos" rel="stylesheet" href="css/historias.css" />
+    <link id="estilos" rel="stylesheet" href="css/datos_historia.css" />
+  </head>
+  <body>
+    <header>
+      <figure>
+        <a href="inicio.html"
+          ><img src="img/DF.svg" alt="logoDigiFantasy" srcset=""
+        /></a>
+      </figure>
+      <nav>
+        <ul>
+          <li><a href="historias.html">HISTORIAS</a></li>
+          <li><a href="error404.html">CURSOS</a></li>
+          <li><a href="error404.html">ARTÍCULOS</a></li>
+          <li><a href="error404.html">SOBRE NOSOTROS</a></li>
+        </ul>
+        <div id="searchform">
+          <input type="text" name="search" id="search" />
+          <a href="#">
+            <img src="img/Iconssearch.svg" alt="buscar" srcset="" />
+          </a>
+        </div>
+      </nav>
+      <nav>
+        <ul>
+          <li id="nightOff"><img src="img/IconsNightMode.svg" alt="Modo Nocturno" srcset=""></li>
+          <li><a href="error404.html">LOGIN</a></li>
+          <li><a href="registrar.html">REGISTRO</a></li>
+        </ul>
+      </nav>
+      <nav style="display: none">
+        <ul>
+          <li>Bienvenido <span id="usuario"></span></li>
+          <li>LOGOUT</li>
+        </ul>
+      </nav>
+    </header>
+    <main id="datosHistoria">
+      <h3 class="tituloSec">Información de la historia</h3>
+
+      <section id="datosBasicosHistoria">
+        <div id="imagenHistoria">
+            <figure>
+                <img src="img/portadaLorem.svg" alt="">
+            </figure>
+        </div>
+        <div id="infoHistoria">
+            <h3 id="tituloHistoria">El Lorem</h3>
+            <ul>
+                <li>Por: <span>AlbanLV</span></li>
+                <li>Género: <span>Terror, Fantasía.</span></li>
+                <li>Etiquetas: <span>Asesinato, Gore, Monstruos.</span></li>
+                <li>Estado: <span>En publicación</span></li>
+            </ul>
+            <!-- <dl>
+                <dt>Por: </dt>
+                <dd>AlbanLV</dd>
+                <dt>Género:</dt>
+                <dd>Terror, Fantasía.</dd>
+                <dt>Etiquetas:</dt>
+                <dd>Asesinato, Gore, Monstruos.</dd>
+                <dt>Estado:</dt>
+                <dd>En publicación</dd>
+            </dl> -->
+            <a href="error404.html" class="enlaceLectura">Empezar a leer</a>
+        </div>
+        <div id="ratingHistoria">
+            <h3>Valoración</h3>
+            <div class="datosValoracion">
+                <p id="valorValoracion">3.2</p>
+                <figure>
+                    <img src="img/IconsRating.svg" alt="" srcset="">
+                </figure>
+            </div>
+        </div>
+      </section>
+      <section id="sinopsis">
+        <h3 class="tituloSeccion">Sinopsis</h3>
+        <p>Alberto, un estudiante de Ingeniería Mecánica, se ve sacado a la fuerza de su vida cotidiana cuando una entidad cósmica lo arranca de su mundo y lo somete a un macabro juego, donde el precio de la derrota es la muerte.</p>
+        <p>Con la ayuda de nuevos conocidos y aliados, Alberto deberá desentrañar los misterios del juego y escapar, antes de convertirse en la próxima víctima.</p>
+      </section>
+      <section id="obrasRecomendadas">
+        <section class="listadoPorGenero">
+            <h3 class="genero">Obras relacionadas/Recomendaciones</h3>
+            <section class="cards-libros">
+              <div class="card-libro">
+                <figure class="portada">
+                  <a href="datos_historia.html"><img src="img/portadaLorem.svg" alt="" /></a>
+                </figure>
+                <p class="tituloLibro">El Lorem</p>
+                <p class="autorLibro">AlbanLV</p>
+              </div>
+              <div class="card-libro">
+                <figure class="portada">
+                  <img src="img/portada2.svg" alt="" />
+                </figure>
+                <p class="tituloLibro">El asesino de Cuervos</p>
+                <p class="autorLibro">AlbanLV</p>
+              </div>
+              <div class="card-libro">
+                <figure class="portada">
+                  <img src="img/dragones.jpg" alt="" />
+                </figure>
+                <p class="tituloLibro">Dragones bajo la luna</p>
+                <p class="autorLibro">AlbanLV</p>
+              </div>
+              <div class="card-libro">
+                <figure class="portada">
+                  <img src="img/portada3.svg" alt="" />
+                </figure>
+                <p class="tituloLibro">El Lorem 2</p>
+                <p class="autorLibro">AlbanLV</p>
+              </div>
+              <div class="card-libro">
+                <figure class="portada">
+                  <img src="img/portada5.jpg" alt="" />
+                </figure>
+                <p class="tituloLibro">Las crónicas de Talem</p>
+                <p class="autorLibro">AlbanLV</p>
+              </div>
+              
+            </section>
+        </section>
+      </section>
+      <section id="valoraciones">
+        <h3>Valoraciones: <span id="cantidadValoraciones">3 valoraciones.</span></h3>
+        <div class="valoracion">
+            <p class="autorFecha"><span>AlbanLV</span>, 4.5*, el día <span>28/11/23</span></p>
+            <p class="contenidoValoracion">Recomendado para una tarde de terror y suspense. Aunque me da la impresión de haber leido algo parecido antes.</p>
+        </div>
+        <div class="valoracion">
+            <p class="autorFecha"><span>ZenLV</span>, 1.5*, el día <span>28/11/23</span></p>
+            <p class="contenidoValoracion">Es una obra horrible, y el autor es muy falto de originalidad.</p>
+        </div>
+        <div class="valoracion">
+            <p class="autorFecha"><span>JLLou</span>, 3.5*, el día <span>29/11/23</span></p>
+            <p class="contenidoValoracion">Me ha gustado la ambientación, pero se nota que es la primera obra del autor.</p>
+        </div>
+        <a class="enlaceValorar" href="error404.html">Valorar</a>
+      </section>
+      
+    </main>
+    <footer>
+      <div id="copyright">
+        <p id="copy">Realizado por Alban Loubet Vergara</p>
+      </div>
+      <div id="internalLinks">
+        <p id="privacidad"><a href="error404.html">Política de privacidad</a></p>
+        <p id="faq"><a href="error404.html">FAQ</a></p>
+        <p id="contacto"><a href="contacto.html">Contacto</a></p>
+      </div>
+      <div id="redes">
+        <p>Redes Sociales</p>
+        <div id="links">
+          <p id="facebook">
+            <a href="error404.html"
+              ><img src="img/Iconsfacebook.svg" alt=""
+            /></a>
+          </p>
+          <p id="instagram">
+            <a href="error404.html"
+              ><img src="img/Iconsinstagram.svg" alt="" srcset=""
+            /></a>
+          </p>
+          <p id="twitter">
+            <a href="error404.html"
+              ><img src="img/Iconstwitter.svg" alt="" srcset=""
+            /></a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
