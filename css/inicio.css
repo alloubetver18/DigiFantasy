@@ -324,25 +324,6 @@ main #otheract .subsectleft figure img, main #otheract .subsectright figure img{
         width: 100%;
     }
 
-    /* Main registro.html */
 
-    main#error404{
-        height: 125vh;
-    }
-
-    main#error404 #mensajeError h1{
-        font-size: 60px;
-    }
-
-    main#error404 #mensajeError h2{
-        
-    }
-
-    main#error404 #mensajeError a{
-        font-size: 20px;
-    }
-
-    header nav input{
-        width: auto;
-    }
+    
 }

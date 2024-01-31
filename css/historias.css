@@ -47,3 +47,83 @@ main#listadoHistorias {
     display: block;
     width: 120px;
 }
+
+@media screen and (max-width: 375px){
+
+    @keyframes slide {
+        0% { transform: translateX(0%); }
+        10% { transform: translateX(0%); }
+    
+        15% { transform: translateX(-100%); }
+        25% { transform: translateX(-100%); }
+    
+        30% { transform: translateX(-200%); }
+        40% { transform: translateX(-200%); }
+    
+        45% { transform: translateX(-300%); }
+        55% { transform: translateX(-300%); }
+    
+        60% { transform: translateX(-400%); }
+        70% { transform: translateX(-400%); }
+    
+        75% { transform: translateX(-500%); }
+        85% { transform: translateX(-500%); }
+
+        90% { transform: translateX(0%); }
+        100% { transform: translateX(0%); }
+    }
+    
+
+    .listadoPorGenero .cards-libros {
+        display: flex;
+        justify-content: start;
+    }
+    
+    .cards-libros {
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        list-style: none;
+        padding-left: 0;
+        /* width: 120px; */
+        width: 240px;
+        margin: auto;
+        justify-content: start;
+    }
+    
+    .listadoPorGenero .cards-libros .card-libro {
+        /* width: fit-content; */
+        flex-shrink: 0;
+        width: 240px;
+        animation-name: slide;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .listadoPorGenero .cards-libros .card-libro .portada{
+        width: 240px;
+        height: 300px;
+    }
+
+    .listadoPorGenero .cards-libros .card-libro .portada a{
+        width: 240px;
+        height: 300px;
+        display: block;
+    }
+
+    .listadoPorGenero .cards-libros .card-libro .portada img{
+        width: 240px;
+        height: 300px;
+    }
+    
+    .cards-libros:hover .card-libro {
+        animation-play-state: paused;
+    }
+    
+    .slide img {
+        width:max-content;
+        vertical-align: top;
+    }
+    
+}
