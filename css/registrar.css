@@ -6,6 +6,8 @@
     --secondary2-400: #FFDD2B;
     --white: #FFFFFF;
     --inputbg: #D9D9D9;
+    --success700:#1AB600;
+    --error400:#FF3434;
 }
 
 /* Seccion cabecera */
@@ -26,7 +28,10 @@ main#registro1 #formulario #cabecera h3{
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
+}
 
+main#registro1 #formulario #cabecera h3 img{
+    width: 24px;
 }
 
 main#registro1 #formulario #cabecera span{
@@ -69,6 +74,16 @@ main#registro1 #formulario #campos .campo input{
     border-radius: .3rem;
 }
 
+main#registro1 #formulario #campos .campo input:valid{
+
+    border: 1px solid var(--success700);
+}
+
+main#registro1 #formulario #campos .campo input:invalid {
+
+    border: 1px solid var(--error400);
+}
+
 main#registro1 #formulario #condiciones .campo{
     display: flex;
     justify-content: flex-start;
@@ -102,7 +117,6 @@ main#registro1 #formulario #enlaces a{
     color: var(--neutral900);
 }
 
-
 @media screen and (max-width: 375px){
 
     main#registro1{
@@ -113,6 +127,7 @@ main#registro1 #formulario #enlaces a{
     main#registro1 #formulario #campos{
         width: 80%;
         margin: auto;
+        align-items:center;
     }
 
     main#registro1 #formulario #campos .campo label{
@@ -132,7 +147,7 @@ main#registro1 #formulario #enlaces a{
     }
 
     main#registro1 #formulario #campos .campo input {
-        width: auto;
+        width: 60%;
     }
     
     

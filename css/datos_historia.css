@@ -34,9 +34,7 @@
     list-style: none;
 }
 
-#datosHistoria #datosBasicosHistoria #infoHistoria{
-    margin-left: -8rem;
-}
+
 
 #datosHistoria #datosBasicosHistoria #infoHistoria ul li span{
     font-weight:normal;
