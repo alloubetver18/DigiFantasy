@@ -149,15 +149,15 @@ main #act .subsectright .texto{
 }
 
 main #act .subsectleft figure, main #act .subsectright figure{
-    width: 230px;
+    width: 238px;
     height: 179px;
-    /* 230 x 179 */
+    object-fit: cover;
 }
 
 main #act .subsectleft figure img, main #act .subsectright figure img{
-    width: 230px;
+    width: 238px;
     height: 179px;
-    
+    object-fit: cover;
 }
 
 /* Seccion actividades 2 */
@@ -200,7 +200,6 @@ main #otheract .subsectleft .texto{
 main #otheract .subsectleft figure, main #otheract .subsectright figure{
     width: 230px;
     height: 179px;
-    /* 230 x 179 */
 }
 
 main #otheract .subsectleft figure img, main #otheract .subsectright figure img{
