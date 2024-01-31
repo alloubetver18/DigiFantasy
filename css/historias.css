@@ -125,5 +125,10 @@ main#listadoHistorias {
         width:max-content;
         vertical-align: top;
     }
+
+    .listadoPorGenero .cards-libros .card-libro .tituloLibro,  .listadoPorGenero .cards-libros .card-libro .autorLibro{
+        margin: auto;
+        text-align: center;
+    }
     
 }

@@ -164,7 +164,7 @@ main #act .subsectleft figure img, main #act .subsectright figure img{
 
 main #otheract{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 2rem;
     padding-right:2rem;
     margin-top: 3rem;
@@ -241,6 +241,10 @@ main #otheract .subsectleft figure img, main #otheract .subsectright figure img{
         padding-bottom: 1rem;
     }
 
+    main section#mensaje .texto {
+        padding: 24px;
+    }
+
     main section#bienvenido .texto .contenido, main section#mensaje .texto .contenido{
         font-size: 21px;
         font-weight: 400;
@@ -286,7 +290,15 @@ main #otheract .subsectleft figure img, main #otheract .subsectright figure img{
 
     main section#act .subsectleft .texto, main section#act .subsectright .texto{
         align-items: center;
+        width: 100%;
     }
+
+    main section#otheract .subsectleft .texto, main section#otheract .subsectright .texto{
+        align-items: center;
+        width: auto;
+    }
+
+
 
     main section#act .subsectright, main section#otheract .subsectleft{
         flex-direction: column;
@@ -323,6 +335,7 @@ main #otheract .subsectleft figure img, main #otheract .subsectright figure img{
         text-align: center;
         width: 100%;
     }
+
 
 
     

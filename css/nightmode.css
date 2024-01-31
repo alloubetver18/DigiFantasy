@@ -265,6 +265,7 @@ main #act .subsectleft .texto a, main #act .subsectright .texto a{
     padding: 1rem;
     margin-top: 1rem;
     background-color: var(--secondary2-400);
+    color: var(--neutral900);
     text-align: center;
 }
 
@@ -306,7 +307,7 @@ main #act .subsectleft figure img, main #act .subsectright figure img{
 
 main #otheract{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 2rem;
     padding-right:2rem;
     margin-top: 3rem;

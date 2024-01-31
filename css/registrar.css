@@ -102,3 +102,39 @@ main#registro1 #formulario #enlaces a{
     text-align: center;
     color: var(--neutral900);
 }
+
+
+@media screen and (max-width: 375px){
+
+    main#registro1{
+        width: auto;
+        height: fit-content;
+    }
+
+    main#registro1 #formulario #campos{
+        width: 80%;
+        margin: auto;
+    }
+
+    main#registro1 #formulario #campos .campo label{
+        width: 6rem;
+        display: block;
+        font-size: 1rem;
+    }
+
+    main#registro1 #formulario #campos .campo{
+        align-items: center;
+        justify-content: normal;
+    }
+
+    main#registro1 #formulario #condiciones{
+        width: 80%;
+        margin: auto;
+    }
+
+    main#registro1 #formulario #campos .campo input {
+        width: auto;
+    }
+    
+    
+}
