@@ -397,6 +397,20 @@ main #otheract .subsectleft figure img, main #otheract .subsectright figure img{
     }
 
 
-
+    main #act .subsectleft .texto a:hover, main #act .subsectright .texto a:hover {
+        animation-name: changeColor;
+        animation-duration: .4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
+    
+    main #exitos #libros figure img:hover{
+        width: 240px;
+        height: 364px;
+        animation-name: zoom;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
     
 }

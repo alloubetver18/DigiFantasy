@@ -10,6 +10,7 @@
     --primary500: #58B9FF;
     --neutral900: #2A3C43;
     --secondary2-400: #FFDD2B;
+    --secondary1-700: #A5038B;
     --white: #FFFFFF;
     --inputbg: #D9D9D9;
 }
@@ -208,6 +209,41 @@ main #mensaje .texto .contenido{
 
 /* Sección Éxitos */
 
+@keyframes zoom {
+
+    0% {
+        transform: scale(100%);
+    }
+
+    100%{
+        transform: scale(125%);
+    }
+
+}
+
+@keyframes changeColor {
+    0%{
+        background-color: var(--secondary2-400);
+        
+    }
+
+    100%{
+        background-color: var(--secondary1-700);
+        color: var(--white);
+    }
+}
+
+@keyframes changeColorBack {
+    0%{
+        background-color: var(--secondary1-700);
+        color: var(--white);
+    }
+
+    100%{
+        background-color: var(--secondary2-400);
+    }
+}
+
 main #exitos{
     display: flex;
     flex-direction: column;
@@ -224,6 +260,15 @@ main #exitos #libros{
 main #exitos #libros figure img{
     width: 120px;
     height: 150px;
+}
+
+main #exitos #libros figure img:hover{
+    width: 120px;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 
 /* Seccion actividades 1 */
@@ -267,6 +312,17 @@ main #act .subsectleft .texto a, main #act .subsectright .texto a{
     background-color: var(--secondary2-400);
     color: var(--neutral900);
     text-align: center;
+    animation-name: changeColorBack;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+main #act .subsectleft .texto a:hover, main #act .subsectright .texto a:hover {
+    animation-name: changeColor;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 
 main #act .subsectleft .texto{
@@ -506,6 +562,22 @@ main #otheract .subsectleft figure img, main #otheract .subsectright figure img{
         font-weight: 400;
         text-align: center;
         width: 100%;
+    }
+
+    main #act .subsectleft .texto a:hover, main #act .subsectright .texto a:hover {
+        animation-name: changeColor;
+        animation-duration: .4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+    }
+    
+    main #exitos #libros figure img:hover{
+        width: 240px;
+        height: 364px;
+        animation-name: zoom;
+        animation-duration: .2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
     }
 
 }
