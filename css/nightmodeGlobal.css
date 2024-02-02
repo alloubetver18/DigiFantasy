@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+:root{
+    --primary500: #58B9FF;
+    --neutral900: #2A3C43;
+    --secondary2-400: #FFDD2B;
+    --secondary1-700: #A5038B;
+    --white: #FFFFFF;
+    --inputbg: #D9D9D9;
+}
+
+/* Estilos generales */
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 120px;
+    background-color: var(--primary500);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* Logo */
+/* 100px ancho * 60px alto */
+header figure, header figure img{
+    width: 100px;
+    height: 60px;
+}
+
+/* nav */
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+header nav ul li{
+    margin-right: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--neutral900);
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: var(--neutral900);
+}
+
+header nav ul li a:hover{
+    color: var(--secondary2-400);
+}
+
+header nav #search{
+    background-color: #eee;
+    border: 0;
+}
+
+header nav #searchform{
+    height: fit-content;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+}
+
+header nav input{
+    width: 41rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    padding-left: .3rem;
+    border-radius: .3rem;
+}
+
+header nav a, header nav a img{
+    width: 26px;
+    height: 26px;
+    margin:auto;
+}
+
+header #nightOn{
+    display: flex;
+    align-items: flex-end;
+}
+
+header #nightOn img{
+    width: 26px;
+    height: 26px;
+}
+
+header #nightOff{
+    display:none;
+}
+
+header #searchNightOff{
+    display: none;
+}
+
+header #searchNightOn{
+    display: block;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: var(--neutral900);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+footer #redes #links{
+    display: flex;
+}
+
+footer #redes #links p{
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+footer #internalLinks p a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Estilos específicos */
+body{
+    background-color: var(--neutral900);
+    color: var(--white);
+}
+
+/* Sección Bienvenido */
+@media screen and (max-width: 375px){
+
+    /* Medias mara max-width 375px */
+    /* Body */
+
+    /* Header */
+    header{
+        width: 100%;
+        height: 350px;
+        display: block;
+    }
+    header figure img{
+        margin-top: 2rem;
+        margin-left: 2rem;
+
+        width: 75%;
+        height: 75%;
+    }
+    header nav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li{
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--white);
+        margin: 0;
+    }
+    header nav #searchform{
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    header nav input{
+        width: auto;
+    }
+
+    /* Footer */
+/*     main{
+        width: 80%;
+        height: fit-content;
+        margin: auto;
+    } */
+
+    footer{
+        height: 300px;
+        flex-direction: column;
+    }
+}

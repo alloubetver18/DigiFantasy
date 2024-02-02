@@ -7,3 +7,12 @@ function nightMode(){
     }
 
 }
+
+function nightModeGeneral(){
+    let ruta = document.getElementById('global').href;
+    if(ruta.includes('css/nightmodeGlobal.css')){
+        document.getElementById('global').href = 'css/global.css';
+    }else{
+        document.getElementById('global').href = 'css/nightmodeGlobal.css';
+    }
+}

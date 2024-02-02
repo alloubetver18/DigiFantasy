@@ -8,6 +8,12 @@
 
 /* datosHistoria.html */
 
+main#datosHistoria{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+}
+
 #datosHistoria .tituloSec{
     display: flex;
     justify-content: center;

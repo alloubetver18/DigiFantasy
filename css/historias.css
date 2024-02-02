@@ -20,6 +20,10 @@ main#listadoHistorias h3.tituloSec{
 }
 
 main#listadoHistorias {
+    
+    width: 80%;
+    height: fit-content;
+    margin: auto;
     margin-bottom: 3rem;
 }
 

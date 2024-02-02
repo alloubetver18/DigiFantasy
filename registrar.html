@@ -20,7 +20,7 @@ Error 404 -->
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/global.css" />
+    <link id="global" rel="stylesheet" href="css/global.css" />
     <link id="estilos" rel="stylesheet" href="css/registrar.css" />
   </head>
   <body>
@@ -47,10 +47,12 @@ Error 404 -->
       <nav>
         <ul>
           <li id="nightOff">
-            <img src="img/IconsNightMode.svg" alt="Modo Nocturno" srcset="" />
+            <a href="#" onclick="nightModeGeneral()"
+              ><img src="img/IconsNightMode.svg" alt="Modo Nocturno" srcset=""
+            /></a>
           </li>
           <li id="nightOn">
-            <a href="#" onclick="nightMode()"
+            <a href="#" onclick="nightModeGeneral()"
               ><img
                 src="img/IconsNightModeOn.svg"
                 alt="Modo Nocturno"
@@ -195,5 +197,6 @@ Error 404 -->
         </div>
       </div>
     </footer>
+    <script src="js/digifantasy.js"></script>
   </body>
 </html>

@@ -12,7 +12,9 @@
 
 /* Seccion cabecera */
 main#registro1{
-    width: 60%;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
 }
 
 main#registro1 #formulario #cabecera{

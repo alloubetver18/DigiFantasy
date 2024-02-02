@@ -8,6 +8,12 @@
 
 /* Página contactar.html */
 
+main#contactar{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+}
+
 main#contactar #formulario #cabecera{
     display: flex;
     flex-direction: column;
