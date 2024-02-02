@@ -72,22 +72,22 @@ main #mensaje .texto .contenido{
 @keyframes zoom {
 
     0% {
-        transform: scale(100%);
+        transform: scale(1);
     }
 
-    100%{
-        transform: scale(125%);
+    100% {
+        transform: scale(1.25);
     }
 
 }
 
 @keyframes changeColor {
-    0%{
+    0% {
         background-color: var(--secondary2-400);
         
     }
 
-    100%{
+    100% {
         background-color: var(--secondary1-700);
         color: var(--white);
     }

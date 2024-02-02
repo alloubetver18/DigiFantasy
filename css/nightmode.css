@@ -212,11 +212,11 @@ main #mensaje .texto .contenido{
 @keyframes zoom {
 
     0% {
-        transform: scale(100%);
+        transform: scale(1);
     }
 
     100%{
-        transform: scale(125%);
+        transform: scale(1.25);
     }
 
 }
