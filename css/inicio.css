@@ -7,7 +7,12 @@
     --inputbg: #D9D9D9;
 }
 
-
+main {
+    
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+}
 
 main #bienvenido, main #mensaje{
     display: flex;
