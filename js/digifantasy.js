@@ -1,13 +1,3 @@
-function nightMode(){
-    let ruta = document.getElementById('estilos').href;
-    if(ruta.includes('css/nightmode.css')){
-        document.getElementById('estilos').href = 'css/inicio.css';
-    }else{
-        document.getElementById('estilos').href = 'css/nightmode.css';
-    }
-
-}
-
 function nightModeGeneral(){
     let ruta = document.getElementById('global').href;
     if(ruta.includes('css/nightmodeGlobal.css')){
@@ -17,6 +7,5 @@ function nightModeGeneral(){
     }else{
         document.getElementById('global').href = 'css/nightmodeGlobal.css';
         document.getElementById('searchIcon').setAttribute("src", "img/IconsSearchNight.svg");
-        
     }
 }
