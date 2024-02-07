@@ -74,7 +74,7 @@ main#contactar #infoContacto #datosContacto h3{
     margin-bottom:2rem;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 376px){
     main#contactar #formulario #campos, main#contactar #formulario #condiciones{
         width: 100%;
     }
