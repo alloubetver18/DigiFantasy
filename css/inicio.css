@@ -146,6 +146,7 @@ main #act{
     padding-left: 2rem;
     padding-right:2rem;
     margin-top: 3rem;
+    gap: 1rem;
 }
 
 main #act section{
@@ -235,6 +236,7 @@ main #otheract{
     padding-right:2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    gap: 1rem;
 }
 
 main #otheract section{
