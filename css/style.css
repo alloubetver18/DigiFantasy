@@ -577,10 +577,6 @@ main#listadoHistorias {
     text-align: center;
 }
 
-#datosHistoria #valoraciones{
-
-}
-
 #datosHistoria #valoraciones h3{
     font-size: 31px;
     font-weight:600;
@@ -879,10 +875,6 @@ main#error404 #mensajeError a{
 
     main#error404 #mensajeError h1{
         font-size: 60px;
-    }
-
-    main#error404 #mensajeError h2{
-        
     }
 
     main#error404 #mensajeError a{
